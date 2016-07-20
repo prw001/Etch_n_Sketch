@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>"Etch-n'-Sketch Grid"</title>
+<head>
+	<link type="text/css" rel="stylesheet" href="EtchNSketch.css">
+	<script language="javascript" type="text/javascript" src="jQuery-1.11.3.js"></script>
+	<script src="EtchNSketch.js"></script>
+</head>
+<body>
+	<div id="container-title-sidebar">
+		<h3 id="website-title">
+			Etch-N-Sketch
+		</h3>
+		<div id="side-panel-left">
+			<h4 class="buttonHeader">Actions:</h4>
+				<button type="button" id="clearGrid">Clear Grid</button>
+				<button type="button" id="newGrid">New Grid</button>
+				<div id="grid-input">
+					<label for"grid-dim">Squares per row<br>(min: 16 max: 64)<p></p></label>
+					<input id="grid-dim" name="grid-dim" type="number" min="16" max="64">
+					<button type="button" id="create">Create!</button>
+				</div>
+			<h5 class="buttonHeader">Style:</h5>
+				<button type="button" class="styleButton" id="Black">Black Sq.</button><div>
+				</div><button type="button" class="styleButton" id="Random">Random Color</button><div>
+				</div><button type="button" class="styleButton" id="Trails">Fleeting Trails</button><div>
+				</div><button type="button" class="styleButton" id="Ink">Ink Wash</button>
+		</div>
+	</div>
+	<div id="main-body">
+			<div id="main-grid">
+				<table>
+					<tbody id="tableBody">
+				</tbody>
+				</table>
+			</div>
+	<div id="side-panel-right">
+		<p id="actions-info">Try Selecting a "Style" on the left side-bar and scroll over the etch-N-sketch to see what happens.</p>
+		<p id="right-panel-info"></p>
+		<p id="action-button-info"></p>
+	</div>
+</body>
+</html>
